@@ -128,7 +128,6 @@ img {
   text-align: center;
   margin-top: 4rem;
   padding-bottom: 5rem;
-  z-index: 2;
   border-bottom: 8px solid #222;
 }
 
@@ -139,115 +138,43 @@ img {
   padding-bottom: 20px;
 }
 
-/* Tabs */
-
-.tabs .container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.tabs p {
-  font-size: 1.2rem;
-  padding-top: 0.5rem;
-}
-
-.tabs .container > div {
-  padding: 1.5rem 0;
-}
-
-.tabs .container > div:hover {
-  color: #fff;
-  cursor: pointer;
-}
-
 /* Tab Content */
+/* General for all tabs */
+.tab-content {
+  border-bottom: 8px solid #222;
+}
 
-/* Tab 1 */
-.tab-1-content-inner {
+.tab-content-inner {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1rem;
   align-items: center;
   justify-content: center;
-  padding: 0 5rem 3rem;
+  padding: 3rem 5rem 3rem;
   max-width: 80%;
   margin: auto;
 }
-#tab-1-content {
-  border-bottom: 8px solid #222;
+
+.image img {
+  width: 500px;
 }
 
-#tab-1-content .tab-1-content-inner img {
-  width: 550px;
-}
-#tab-1-content .tab-1-content-inner .text {
+.tab-content-inner .text {
   width: 500px;
   margin-top: 2rem;
   place-self: center;
+}
+
+/* Tab 1 */
+#tab-1-content .tab-1-content-inner {
+  padding: 0 5rem 3rem;
 }
 
 .tab-rows #tab-1-content {
   border-top: 8px solid #222;
 }
 
-/* Tab 2 */
-#tab-2-content .tab-2-content-inner {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1rem;
-  align-items: center;
-  justify-content: center;
-  padding: 3rem 5rem 3rem;
-  max-width: 80%;
-  margin: auto;
-}
-
-#tab-2-content {
-  border-bottom: 8px solid #222;
-}
-
-#tab-2-content .tab-2-content-inner img {
-  width: 500px;
-}
-#tab-2-content .tab-2-content-inner .text {
-  width: 500px;
-  margin-top: 2rem;
-  place-self: center;
-}
-
-/* Tab 3 */
-#tab-3-content .tab-3-content-inner {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1rem;
-  align-items: center;
-  justify-content: center;
-  padding: 3rem 5rem 3rem;
-  max-width: 80%;
-  margin: auto;
-}
-
-#tab-3-content {
-  border-bottom: 8px solid #222;
-}
-
-#tab-3-content .tab-3-content-inner img {
-  width: 550px;
-}
-#tab-3-content .tab-3-content-inner .text {
-  width: 500px;
-  margin-top: 2rem;
-  place-self: center;
-}
-
-/* FAQ */
-
-/* 1 */
-
+/* FAQ Content */
 .faq {
   max-width: 52%;
   margin: auto;
@@ -259,7 +186,7 @@ img {
   margin-bottom: 3rem;
 }
 
-.container-faq-1 .container-q {
+.container-faq .container-q {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -268,154 +195,20 @@ img {
   margin-bottom: 2px;
 }
 
-.container-faq-1 .answer-1 {
+.container-faq .answer {
   background: #303030;
   padding: 0.8rem 2.2rem;
 }
 
-/* 2 */
-.container-faq-2 {
+.faq-item {
   margin-top: 0.8rem;
 }
 
-.container-faq-2 .container-q {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #303030;
-  padding: 0.8rem 2.2rem;
-  margin-bottom: 2px;
-}
-
-.container-faq-2 .answer-2 {
-  background: #303030;
-  padding: 0.8rem 2.2rem;
-}
-/* 3 */
-
-.container-faq-3 {
-  margin-top: 0.8rem;
-}
-
-.container-faq-3 .container-q {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #303030;
-  padding: 0.8rem 2.2rem;
-  margin-bottom: 2px;
-}
-
-.container-faq-3 .answer-3 {
-  background: #303030;
-  padding: 0.8rem 2.2rem;
-}
-
-/* 4 */
-
-.container-faq-4 {
-  margin-top: 0.8rem;
-}
-
-.container-faq-4 .container-q {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #303030;
-  padding: 0.8rem 2.2rem;
-  margin-bottom: 2px;
-}
-
-.container-faq-4 .answer-4 {
-  background: #303030;
-  padding: 0.8rem 2.2rem;
-}
-
-/* 5 */
-
-.container-faq-5 {
-  margin-top: 0.8rem;
-}
-
-.container-faq-5 .container-q {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #303030;
-  padding: 0.8rem 2.2rem;
-  margin-bottom: 2px;
-}
-
-.container-faq-5 .answer-5 {
-  background: #303030;
-  padding: 0.8rem 2.2rem;
-}
-/* Hide Content initially */
-/* #tab-1-content,
-#tab-2-content,
-#tab-3-content {
-  display: flex;
-} */
-
-/* .show {
-  display: block !important;
-} */
-
-/* #tab-1-content .tab-1-content-inner {
-  display: grid;
-  grid-template-columns: repeat(2, 1frt);
-  grid-gap: 2rem;
-  align-items: center;
-  justify-content: center;
-}
-
-#tab-2-content .tab-2-content-top {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-gap: 1rem;
-  justify-content: center;
-  align-items: center;
-}
-
-#tab-2-content .tab-2-content-bottom {
-  margin-top: 2rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-} */
-
-.table {
-  width: 100%;
-  margin-top: 2rem;
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-.table thead th {
-  text-transform: uppercase;
-  padding: 0.8rem;
-}
-
-.table tbody tr td {
-  color: #999;
-  text-transform: uppercase;
-  padding: 0.8rem 1.2rem;
-  text-align: center;
-}
-
-.table tbody tr td:first-child {
-  text-align: left;
-}
-
-.table tbody tr:nth-child(odd) {
-  background: #222;
+.container-q {
+  cursor: pointer;
 }
 
 /* Footer */
-
 .footer {
   max-width: 75%;
   margin: 4rem auto 2rem;
@@ -440,14 +233,6 @@ img {
 
 .footer li {
   line-height: 1.9;
-}
-
-/* Container */
-.container {
-  max-width: 70%;
-  margin: auto;
-  overflow: hidden;
-  padding: 0 2rem;
 }
 
 /* Text Styles*/
@@ -530,6 +315,7 @@ img {
   font-size: 2rem;
   transform: rotate(45deg);
 }
+
 /* Email */
 .email {
   display: flex;
@@ -551,6 +337,7 @@ img {
 }
 
 /* Media Queries */
+
 /* @media (max-width: 960px) {
   .showcase {
     height: 70vh;
