@@ -45,8 +45,8 @@ img {
 .showcase {
   width: 100%;
   height: 80vh;
-  min-height: 800px;
-  max-height: 1000px;
+  min-height: 750px;
+  max-height: 750px;
   position: relative;
   background: url("new-background.jpg") no-repeat center center/cover;
 }
@@ -313,6 +313,7 @@ img {
 }
 
 /* Email */
+
 .email {
   display: flex;
 }
@@ -339,7 +340,7 @@ img {
   .showcase {
     height: 80vh;
     min-height: 700px;
-    max-height: 1000px;
+    max-height: 700px;
   }
 
   .showcase-content {
@@ -389,7 +390,7 @@ img {
   .showcase {
     height: 80vh;
     min-height: 700px;
-    max-height: 1000px;
+    max-height: 700px;
   }
 
   .showcase-content h1 {
@@ -454,6 +455,15 @@ img {
 
 /* Media Small */
 @media (max-width: 600px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  .showcase-top a {
+    transform: translate(-20%, -75%);
+  }
+
   .showcase-top img {
     width: 100px;
   }
@@ -466,8 +476,9 @@ img {
   .showcase {
     height: 60vh;
     min-height: 500px;
-    max-height: 1000px;
+    max-height: 500px;
   }
+
   .showcase-content {
     width: 90%;
     margin-top: 3.5rem;
@@ -521,8 +532,17 @@ img {
   .faq {
     padding-left: 0;
     padding-right: 0;
-    min-width: 400px;
+    padding-top: 2.5rem;
+    min-width: 350px;
     max-width: 100%;
+  }
+
+  .faq h1 {
+    padding-bottom: 0.5rem;
+  }
+
+  .faq .text-xl {
+    font-size: 1.5rem;
   }
 
   .faq-item {
@@ -538,8 +558,13 @@ img {
     padding-bottom: 0.3rem;
   }
 
-  .tab-content-inner.text {
-    width: 400px;
+  .tab-content-inner .text {
+    width: 350px;
+  }
+
+  .showcase-content-2 {
+    margin-top: 1.5rem;
+    padding-bottom: 3rem;
   }
 
   .showcase-content-2 p {
@@ -549,5 +574,9 @@ img {
 
   .footer .footer-cols {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .email input[type="email"] {
+    min-width: 300px;
   }
 }

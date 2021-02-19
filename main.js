@@ -9,7 +9,8 @@ const faqItems = document.querySelectorAll('.faq-item');
     tabContentItems.classList.toggle('hide');
     tabx.classList.toggle('hide');
     tabxx.classList.toggle('hide');
- }
+}
+
 
 // Listen for tab click
 faqItems.forEach(item => item.addEventListener('click', toggleItem));
