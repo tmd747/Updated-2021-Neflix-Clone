@@ -304,12 +304,12 @@ img {
 .x-btn {
   color: #fff;
   font-size: 2rem;
+  transform: rotate(45deg);
 }
 
 .x-btn2 {
   color: #fff;
   font-size: 2rem;
-  transform: rotate(45deg);
 }
 
 /* Email */
